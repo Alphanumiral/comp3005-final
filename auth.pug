@@ -1,0 +1,21 @@
+html 
+    <head>
+        script(src="/client.js")
+    </head>
+    <body>
+        -if (status == null){
+            p Username 
+            <input type="text" id="username">
+            p Password 
+            <input type="text" id="password">
+            <br>
+            <br>
+            <button type="button" value="Register" onclick="register()">Register</button>
+            <button type="button" value="Login" onclick="login()">Login</button>
+        -}
+        -else{
+            p Welcome, #{status}
+            <button type="button" value="SignOut" onclick="signOut()">Sign Out</button>
+        -}
+
+    </body>

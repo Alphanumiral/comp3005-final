@@ -1,0 +1,17 @@
+html 
+    <head>
+        script(src="/client.js")
+    </head>
+    <body style="text-align: center">
+        <h1 style="text-decoration:underline"> #{book['title']}</h1>
+        <ul style="list-style-type:none; padding: 0;">
+            <li id="bookID"> ID: #{book['id']}</li>
+            li Genre: #{book['genre']}
+            li Author: #{book['authorname']}
+            li Publisher: #{book['pubname']}
+            <br>
+            <li id="stock"> Stock: #{parseFloat(book['stock']).toFixed(0)} </li>
+            li Price: $#{book['price']}
+        </ul>
+        <button type="button" onclick="addToCart()">Add To Cart</button>
+    </body>
